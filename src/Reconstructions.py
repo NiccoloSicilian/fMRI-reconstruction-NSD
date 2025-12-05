@@ -128,7 +128,7 @@ print("subj",subj,"num_voxels",num_voxels)
 # In[5]:
 
 
-val_url = f"{data_path}"
+val_url = f"{data_path}/webdataset_avg_split/test/test_subj0{subj}_" + "{0..1}.tar"
 meta_url = f"{data_path}/webdataset_avg_split/metadata_subj0{subj}.json"
 num_train = 8559 + 300
 num_val = 982
