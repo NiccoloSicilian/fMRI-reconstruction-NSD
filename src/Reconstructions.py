@@ -257,7 +257,7 @@ diffusion_prior = BrainDiffusionPrior(
 )
 
 outdir = f'{model_name}'
-ckpt_path = os.path.join(outdir, f'last.pth')
+ckpt_path = os.path.join(outdir, f'last_2.pth')
 
 print("ckpt_path",ckpt_path)
 checkpoint = torch.load(ckpt_path, map_location=device)
