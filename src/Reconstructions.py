@@ -158,7 +158,7 @@ for val_i, (voxel, img_input, coco) in enumerate(val_dl):
 
 from models import Voxel2StableDiffusionModel
 
-outdir = f'../train_logs/{autoencoder_name}'
+outdir = f'{autoencoder_name}'
 ckpt_path = os.path.join(outdir, f'epoch120.pth')
 
 if os.path.exists(ckpt_path):
@@ -256,7 +256,7 @@ diffusion_prior = BrainDiffusionPrior(
     voxel2clip=voxel2clip,
 )
 
-outdir = f'../train_logs/{model_name}'
+outdir = f'{model_name}'
 ckpt_path = os.path.join(outdir, f'last.pth')
 
 print("ckpt_path",ckpt_path)
