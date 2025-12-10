@@ -195,7 +195,7 @@ vd_pipe.image_unet.eval()
 vd_pipe.vae.eval()
 vd_pipe.image_unet.requires_grad_(False)
 vd_pipe.vae.requires_grad_(False)
-
+print(vd_cache_dir)
 vd_pipe.scheduler = UniPCMultistepScheduler.from_pretrained(vd_cache_dir, subfolder="scheduler")
 num_inference_steps = 20
 
